@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0,
+
+}
+
+body {
+  background: #0d1219;
+  color: #fff;
+}
+
+/*TRABAJANDO CON REDES*/
+
+
+
+.iconoss img {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.iconoss {
+  margin-left: 300px;
+  margin-top: -50px;
+}
+
+/*TRABAJANDO CON EL HEADER*/
+
+header h2 {
+  font-size: 35px;
+}
+
+header .container-header {
+  margin-right: 50px;
+  margin-left: 50px;
+  background: #141f2d;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+header .header-img img {
+  padding: 4px;
+  width: 52px;
+  height: 55px;
+  margin-top: 5px;
+}
+
+header .danielsuarez {
+  display: inline-block;
+  margin-left: 60px;
+  margin-top: -55px;
+
+}
+
+header nav {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  margin-left: 450px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  margin-top: -30px;
+}
+
+header nav a:hover {
+  color: #C9C95E;
+}
+
+/*TRABAJANDO CON EL MAIN TARJETAS*/
+main .container-main {
+  margin-top: 30px;
+  margin-right: 50px;
+  margin-left: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+main a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 2px rgba(248, 229, 229, 0.3);
+}
+
+main a:hover {
+  background: rgba(248, 229, 229, 8);
+
+}
+
+.post .post-img {
+  border-radius: 8px 8px 0px 0px;
+  width: 100%;
+  height: 300px;
+  background: center;
+  background-size: 100% 100%;
+}
+
+.post .post-content {
+  padding: 10px;
+  justify-content: center;
+  background: #141f2d;
+  border-radius: 8px;
+}
+
+.post .post-content h2 {
+  color: #C9C95E;
+  margin-bottom: 10px;
+
+}
+
+.post .post-content p {
+  font-size: 18px;
+}
+
+.post .post-content .fecha {
+  margin-top: 10px;
+  font-size: 13px;
+  margin-left: 70%;
+  color: #C9C95E;
+}
+
+/*Trabajando con el pie de pagina*/
+footer {
+  background: #141f2d;
+  margin-top: 25px;
+  margin-right: 50px;
+  margin-left: 50px;
+  padding: 10px;
+}
+
+footer .pie {
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+footer .pie img {
+  width: 15px;
+  height: 15px;
+}
+
+footer .pie-link {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 550px;
+  margin-top: -20px;
+}
+
+footer .pie-link a {
+
+  margin-left: 25px;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+
+
+/*Trabajando con Responsive*/
+
+@media screen and (max-width: 930px) {
+
+
+  main .container-main {
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  footer .pie-link {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 250px;
+    margin-top: -20px;
+  }
+
+  .post .post-img {
+    border-radius: 8px 8px 0px 0px;
+    width: 100%;
+    height: 200px;
+    background: center;
+    background-size: 100% 100%;
+  }
+
+}
+
+
+/******************************************************/
+@media screen and (max-width: 710px) {
+
+
+  main .container-main {
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+  .post .post-img {
+    border-radius: 8px 8px 0px 0px;
+    width: 100%;
+    height: 270px;
+    background: center;
+    background-size: 100% 100%;
+  }
+
+  header nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-top: -20px;
+    margin-left: 10px;
+  }
+
+  header nav {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-left: 50px;
+  }
+}
+
+/******************************************************/
+@media screen and (max-width: 500px) {
+
+  header .container-header {
+    margin-right: 20px;
+    margin-left: 20px;
+    background: #141f2d;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  main .container-main {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+  .post .post-img {
+    border-radius: 8px 8px 0px 0px;
+    width: 100%;
+    height: 170px;
+    background: center;
+    background-size: 100% 100%;
+  }
+
+  header nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-top: -30px;
+    margin-left: -120px;
+  }
+
+  header nav {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    font-size: 10px;
+  }
+
+  /*Trabajando con el pie de pagina*/
+  footer {
+    background: #141f2d;
+    margin-top: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 10px;
+  }
+
+  footer .pie {
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  footer .pie img {
+    width: 15px;
+    height: 15px;
+  }
+
+  footer .pie-link {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 550px;
+    margin-top: -20px;
+  }
+
+  footer .pie-link a {
+
+    margin-left: 25px;
+    text-decoration: none;
+    color: #fff;
+  }
+}
